@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>鼎翰建築師事務所</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      z-index: 999;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+    }
+    nav a {
+      margin: 0 1.5rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    section {
+      padding: 100px 20px 80px;
+      max-width: 900px;
+      margin: 0 auto;
+      border-bottom: 1px solid #eee;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid #333;
+      padding-left: 1rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .gallery-item {
+      background: #f9f9f9;
+      padding: 10px;
+      border: 1px solid #ddd;
+      transition: transform 0.3s;
+    }
+    .gallery-item:hover {
+      transform: scale(1.02);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    .contact {
+      text-align: center;
+    }
+    .contact p {
+      margin: 0.5rem 0;
+    }
+    @media (max-width: 768px) {
+      nav a {
+        margin: 0 0.8rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#about">關於鼎翰</a>
+    <a href="#projects">建築設計</a>
+    <a href="#interior">空間美學</a>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>關於鼎翰</h2>
+  <p>我們致力於以人為本的設計哲學，融合空間、自然與文化，創造永續且具美感的建築與室內環境。</p>
+</section>
+
+<section id="projects">
+  <h2>建築設計</h2>
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/400x250" alt="台中住宅案">
+      <p>台中住宅案</p>
+    </div>
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/400x250" alt="山間美術館">
+      <p>山間美術館</p>
+    </div>
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/400x250" alt="都市更新案">
+      <p>都市更新案</p>
+    </div>
+  </div>
+</section>
+
+<section id="interior">
+  <h2>空間美學</h2>
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/400x250" alt="住宅空間">
+      <p>住宅空間 – 營造溫馨自然的居家氛圍。</p>
+    </div>
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/400x250" alt="辦公空間">
+      <p>辦公空間 – 以開放與效率為核心的現代設計。</p>
+    </div>
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/400x250" alt="展覽設計">
+      <p>展覽設計 – 彈性與視覺引導兼具的展示空間。</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>聯絡我們</h2>
+  <p>Email：info@dinghan-arch.com</p>
+  <p>電話：02-1234-5678</p>
+</section>
+
+</body>
+</html>
